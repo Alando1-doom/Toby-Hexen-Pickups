@@ -1,0 +1,46 @@
+ACTOR ArtiInvulnerability2_Toby : CustomInventory replaces ArtiInvulnerability2
+{
+	Game Hexen
+	SpawnID 133
+	+COUNTITEM
+	+FLOATBOB
+	+INVENTORY.PICKUPFLASH
+	Inventory.RespawnTics 4230
+	Inventory.PickupMessage "$TXT_ARTIINVULNERABILITY2"
+	Inventory.PickupSound "artifact/defender"
+	States
+	{
+	Spawn:
+		DEFN A 3 Bright A_SpawnItemEx("DefenderPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		DEFN BCDABCDABCDABCDABCD 3 Bright
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIfInventory("ArtiInvulnerability2_Giver", 25, "NoPickup")
+		TNT1 A 0 A_GiveInventory("ArtiInvulnerability2_Giver", 1)
+		TNT1 A 0 A_PlaySound("artifact/defender/ann")
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}
+
+
+ACTOR ArtiInvulnerability2_Giver : PowerupGiver
+{
+	Game Hexen
+	-COUNTITEM
+	+FLOATBOB
+	Inventory.Icon ARTIDEFN
+	Inventory.UseSound "artifact/defender/use"
+	Inventory.PickupMessage "$TXT_ARTIINVULNERABILITY2"
+	Powerup.Type Invulnerable
+	Powerup.Color GoldMap
+	Tag "$TAG_ARTIDEFENDER"
+	States
+	{
+	Spawn:
+		DEFN ABCD 3
+		Loop
+	}
+}

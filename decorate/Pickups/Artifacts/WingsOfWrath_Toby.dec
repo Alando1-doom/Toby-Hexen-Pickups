@@ -1,0 +1,44 @@
+ACTOR ArtiFly_Toby : CustomInventory replaces ArtiFly
+{
+	Game Raven
+	SpawnID 15
+	Inventory.RespawnTics 4230
+	+COUNTITEM
+	+FLOATBOB
+	+INVENTORY.PICKUPFLASH
+	Inventory.PickupMessage "$TXT_ARTIFLY"
+	Inventory.PickupSound "artifact/wings"
+	States
+	{
+	Spawn:
+		SOAR A 3 Bright A_SpawnItemEx("WingsPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		SOAR BCBABCBABCBABCBABCBABCB 3 Bright
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIfInventory("WingsGiver", 25, "NoPickup")
+		TNT1 A 0 A_GiveInventory("WingsGiver", 1)
+		TNT1 A 0 A_PlaySound("artifact/wings/ann")
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}
+
+ACTOR WingsGiver : PowerupGiver
+{
+	Game Raven
+	+INVENTORY.INTERHUBSTRIP
+	Inventory.RespawnTics 4230
+	Inventory.Icon ARTISOAR
+	Inventory.UseSound "artifact/wings/use"
+	Inventory.PickupMessage "$TXT_ARTIFLY"
+	Tag "$TAG_ARTIFLY"
+	Powerup.Type Flight
+	States
+	{
+	Spawn:
+		SOAR ABCB 5
+		Loop
+	}
+}

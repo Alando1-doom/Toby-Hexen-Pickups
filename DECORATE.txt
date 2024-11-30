@@ -1,0 +1,68 @@
+//Item Announcers Directory
+#include decorate/ItemAnnouncers/VialAnn.dec
+#include decorate/ItemAnnouncers/FlaskAnn.dec
+#include decorate/ItemAnnouncers/UrnAnn.dec
+
+//Item Flashes Directory
+#include decorate/ItemFlashes/Vial_ID.dec
+#include decorate/ItemFlashes/Flask_ID.dec
+#include decorate/ItemFlashes/Urn_ID.dec
+
+//Pickup Checkers Directory
+//Artifact Checkers
+#include decorate/PickupCheckers/ArtifactCheckers/WingsChecker.dec
+#include decorate/PickupCheckers/ArtifactCheckers/TorchChecker.dec
+#include decorate/PickupCheckers/ArtifactCheckers/ChaosDeviceChecker.dec
+#include decorate/PickupCheckers/ArtifactCheckers/DefenderChecker.dec
+#include decorate/PickupCheckers/ArtifactCheckers/FlechetteChecker.dec
+#include decorate/PickupCheckers/ArtifactCheckers/PorkChecker.dec
+#include decorate/PickupCheckers/ArtifactCheckers/BanishChecker.dec
+#include decorate/PickupCheckers/ArtifactCheckers/BlastChecker.dec
+#include decorate/PickupCheckers/ArtifactCheckers/ServantChecker.dec
+#include decorate/PickupCheckers/ArtifactCheckers/BootsChecker.dec
+#include decorate/PickupCheckers/ArtifactCheckers/KraterChecker.dec
+#include decorate/PickupCheckers/ArtifactCheckers/BracersChecker.dec
+#include decorate/PickupCheckers/ArtifactCheckers/HealRadiusChecker.dec
+//Health Checkers
+#include decorate/PickupCheckers/HealthPickupCheckers/VialChecker.dec
+#include decorate/PickupCheckers/HealthPickupCheckers/FlaskChecker.dec
+#include decorate/PickupCheckers/HealthPickupCheckers/UrnChecker.dec
+//Armor Checkers
+#include decorate/PickupCheckers/ArmorPickupCheckers/LightArmorPickupChecker.dec
+#include decorate/PickupCheckers/ArmorPickupCheckers/AmuletPickupChecker.dec
+#include decorate/PickupCheckers/ArmorPickupCheckers/MediumArmorPickupChecker.dec
+#include decorate/PickupCheckers/ArmorPickupCheckers/HeavyArmorPickupChecker.dec
+//Key Checker
+#include decorate/PickupCheckers/KeyPickupCheckers/KeyChecker.dec
+//Puzzle Item Checker
+#include decorate/PickupCheckers/PuzzlePickupChecker/PuzzleChecker.dec
+
+//Pickups Directory
+//Armor
+#include decorate/Pickups/Armor/MeshArmor.dec
+#include decorate/Pickups/Armor/FalconShield.dec
+#include decorate/Pickups/Armor/Helmet.dec
+#include decorate/Pickups/Armor/Amulet.dec
+
+//Artifacts
+#include decorate/Pickups/Artifacts/Defender_Toby.dec
+#include decorate/Pickups/Artifacts/WingsOfWrath_Toby.dec
+#include decorate/Pickups/Artifacts/ArtiTorch_Toby.dec
+#include decorate/Pickups/Artifacts/Flechette_Toby.dec
+#include decorate/Pickups/Artifacts/ArtiPork_Toby.dec
+#include decorate/Pickups/Artifacts/ChaosDevice_Toby.dec
+#include decorate/Pickups/Artifacts/BanDevice_Toby.dec
+#include decorate/Pickups/Artifacts/BlastRadius_Toby.dec
+#include decorate/Pickups/Artifacts/DarkServant_Toby.dec
+#include decorate/Pickups/Artifacts/SpeedBoots_Toby.dec
+#include decorate/Pickups/Artifacts/KraterOfMight_Toby.dec
+#include decorate/Pickups/Artifacts/Bracers_Toby.dec
+#include decorate/Pickups/Artifacts/HealRadius_Toby.dec
+//Health
+#include decorate/Pickups/Health/CrystalVial_Toby.dec
+#include decorate/Pickups/Health/QuartzFlask_Toby.dec
+#include decorate/Pickups/Health/MysticUrn_Toby.dec
+//Keys
+#include decorate/Pickups/Keys/HexenKeys_Toby.dec
+//Puzzle Items
+#include decorate/Pickups/PuzzleItems/PuzzleItems_Toby.dec

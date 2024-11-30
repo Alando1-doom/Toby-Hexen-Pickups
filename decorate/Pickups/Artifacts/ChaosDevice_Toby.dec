@@ -1,0 +1,31 @@
+ACTOR ArtiTeleport_Toby : CustomInventory 36
+{
+	Game Raven
+	SpawnID 18
+	+COUNTITEM
+	+FLOATBOB
+	+INVENTORY.PICKUPFLASH
+	Inventory.PickupMessage "$TXT_ARTITELEPORT"
+	Inventory.PickupSound "artifact/chaosdevice"
+	States
+	{
+	Spawn:
+		ATLP A 4 Bright A_SpawnItemEx("ChaosPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		ATLP BCBABCBABCBABCB 4 Bright
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIfInventory("ArtiTeleport_2", 25, "NoPickup")
+		TNT1 A 0 A_GiveInventory("ArtiTeleport_2", 1)
+		TNT1 A 0 A_PlaySound("artifact/chaosdevice/ann")
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}
+
+
+ACTOR ArtiTeleport_2 : ArtiTeleport
+{
+	Inventory.UseSound "artifact/chaosdevice/use"
+}

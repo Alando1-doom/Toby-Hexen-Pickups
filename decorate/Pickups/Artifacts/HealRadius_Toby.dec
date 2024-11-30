@@ -1,0 +1,33 @@
+ACTOR ArtiHealingRadius_Toby : CustomInventory 10120
+{
+	Game Hexen
+	+COUNTITEM
+	+FLOATBOB
+	Inventory.DefMaxAmount
+	+INVENTORY.PICKUPFLASH
+	+INVENTORY.FANCYPICKUPSOUND
+	Inventory.PickupMessage "$TXT_ARTIHEALINGRADIUS"
+	Tag "$TAG_ARTIHEALINGRADIUS"
+	Inventory.PickupSound "artifact/healradius"
+	States
+	{
+	Spawn:
+		HRAD A 3 Bright A_SpawnItemEx("HealRadiusPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		HRAD BCDEFGHIJKLMNOP 3 Bright
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIfInventory("ArtiHealingRadius_2", 25, "NoPickup")
+		TNT1 A 0 A_GiveInventory("ArtiHealingRadius_2", 1)
+		TNT1 A 0 A_PlaySound("artifact/healradius/ann")
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}
+
+
+ACTOR ArtiHealingRadius_2 : ArtiHealingRadius
+{
+	Inventory.UseSound "artifact/healradius/use"
+}

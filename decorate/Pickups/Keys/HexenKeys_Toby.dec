@@ -1,0 +1,277 @@
+//*******************************************************
+//Keys
+//*******************************************************
+
+Actor SteelKey_Toby : CustomInventory 8030
+{
+ Game Hexen
+ SpawnID 85
+ inventory.pickupmessage "You got the Steel Key."
+ inventory.pickupsound "key/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   KEY1 A 6 Bright A_SpawnItemEx("KeyPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   KEY1 A 6
+	   KEY1 A 6 Bright
+	   KEY1 A 6
+	   KEY1 A 6 Bright
+	   KEY1 A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/key/steel")
+       TNT1 A 1 A_GiveInventory("KeySteel", 1)
+	   Stop
+    }
+}
+
+
+Actor CaveKey_Toby : CustomInventory 8031
+{
+ Game Hexen
+ SpawnID 86
+ inventory.pickupmessage "You got the Cave Key."
+ inventory.pickupsound "key/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   KEY2 A 6 Bright A_SpawnItemEx("KeyPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   KEY2 A 6
+	   KEY2 A 6 Bright
+	   KEY2 A 6
+	   KEY2 A 6 Bright
+	   KEY2 A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/key/cave")
+       TNT1 A 1 A_GiveInventory("KeyCave", 1)
+	   Stop
+    }
+}
+
+
+Actor AxeKey_Toby : CustomInventory 8032
+{
+ Game Hexen
+ SpawnID 87
+ inventory.pickupmessage "You got the Axe Key."
+ inventory.pickupsound "key/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   KEY3 A 6 Bright A_SpawnItemEx("KeyPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   KEY3 A 6
+	   KEY3 A 6 Bright
+	   KEY3 A 6
+	   KEY3 A 6 Bright
+	   KEY3 A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/key/axe")
+       TNT1 A 1 A_GiveInventory("KeyAxe", 1)
+	   Stop
+    }
+}
+
+
+Actor FireKey_Toby : CustomInventory 8033
+{
+ Game Hexen
+ SpawnID 88
+ inventory.pickupmessage "You got the Fire Key."
+ inventory.pickupsound "key/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   KEY4 A 6 Bright A_SpawnItemEx("KeyPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   KEY4 A 6
+	   KEY4 A 6 Bright
+	   KEY4 A 6
+	   KEY4 A 6 Bright
+	   KEY4 A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/key/fire")
+       TNT1 A 1 A_GiveInventory("KeyFire", 1)
+	   Stop
+    }
+}
+
+
+Actor EmeraldKey_Toby : CustomInventory 8034
+{
+ Game Hexen
+ SpawnID 89
+ inventory.pickupmessage "You got the Emerald Key."
+ inventory.pickupsound "key/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   KEY5 A 6 Bright A_SpawnItemEx("KeyPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   KEY5 A 6
+	   KEY5 A 6 Bright
+	   KEY5 A 6
+	   KEY5 A 6 Bright
+	   KEY5 A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/key/emerald")
+       TNT1 A 1 A_GiveInventory("KeyEmerald", 1)
+	   Stop
+    }
+}
+
+
+Actor DungeonKey_Toby : CustomInventory 8035
+{
+ Game Hexen
+ SpawnID 90
+ inventory.pickupmessage "You got the Dungeon Key."
+ inventory.pickupsound "key/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   KEY6 A 6 Bright A_SpawnItemEx("KeyPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   KEY6 A 6
+	   KEY6 A 6 Bright
+	   KEY6 A 6
+	   KEY6 A 6 Bright
+	   KEY6 A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/key/dungeon")
+       TNT1 A 1 A_GiveInventory("KeyDungeon", 1)
+	   Stop
+    }
+}
+
+
+Actor SilverKey_Toby : CustomInventory 8036
+{
+ Game Hexen
+ SpawnID 91
+ inventory.pickupmessage "You got the Silver Key."
+ inventory.pickupsound "key/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   KEY7 A 6 Bright A_SpawnItemEx("KeyPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   KEY7 A 6
+	   KEY7 A 6 Bright
+	   KEY7 A 6
+	   KEY7 A 6 Bright
+	   KEY7 A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/key/silver")
+       TNT1 A 1 A_GiveInventory("KeySilver", 1)
+	   Stop
+    }
+}
+
+
+Actor RustedKey_Toby : CustomInventory 8037
+{
+ Game Hexen
+ SpawnID 92
+ inventory.pickupmessage "You got the Rusted Key."
+ inventory.pickupsound "key/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   KEY8 A 6 Bright A_SpawnItemEx("KeyPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   KEY8 A 6
+	   KEY8 A 6 Bright
+	   KEY8 A 6
+	   KEY8 A 6 Bright
+	   KEY8 A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/key/rusted")
+       TNT1 A 1 A_GiveInventory("KeyRusted", 1)
+	   Stop
+    }
+}
+
+
+Actor HornKey_Toby : CustomInventory 8038
+{
+ Game Hexen
+ SpawnID 93
+ inventory.pickupmessage "You got the Horn Key."
+ inventory.pickupsound "key/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   KEY9 A 6 Bright A_SpawnItemEx("KeyPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   KEY9 A 6
+	   KEY9 A 6 Bright
+	   KEY9 A 6
+	   KEY9 A 6 Bright
+	   KEY9 A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/key/horn")
+       TNT1 A 1 A_GiveInventory("KeyHorn", 1)
+	   Stop
+    }
+}
+
+
+Actor SwampKey_Toby : CustomInventory 8039
+{
+ Game Hexen
+ SpawnID 94
+ inventory.pickupmessage "You got the Swamp Key."
+ inventory.pickupsound "key/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   KEYA A 6 Bright A_SpawnItemEx("KeyPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   KEYA A 6
+	   KEYA A 6 Bright
+	   KEYA A 6
+	   KEYA A 6 Bright
+	   KEYA A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/key/swamp")
+       TNT1 A 1 A_GiveInventory("KeySwamp", 1)
+	   Stop
+    }
+}
+
+
+Actor CastleKey_Toby : CustomInventory 8200
+{
+ Game Hexen
+ //SpawnID 95 - Original has now Spawn ID
+ inventory.pickupmessage "You got the Castle Key."
+ inventory.pickupsound "key/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   KEYB A 6 Bright A_SpawnItemEx("KeyPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   KEYB A 6
+	   KEYB A 6 Bright
+	   KEYB A 6
+	   KEYB A 6 Bright
+	   KEYB A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/key/castle")
+       TNT1 A 1 A_GiveInventory("KeyCastle", 1)
+	   Stop
+    }
+}

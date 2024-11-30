@@ -1,0 +1,52 @@
+ACTOR FalconShield_Toby : CustomInventory replaces FalconShield
+{
+	Game Hexen
+	SpawnID 69
+	+FLOATBOB
+	Inventory.PickupMessage "$TXT_ARMOR2"
+	Inventory.PickupSound "armor/shield"
+States
+	{
+	Spawn:
+		SHLD A 1 A_SpawnItemEx("MediumArmorPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		SHLD A 6 Bright
+		SHLD A 6
+		SHLD A 6 Bright
+		SHLD A 6
+		SHLD A 6 Bright
+		SHLD A 6
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIfInventory("FWeapFist_Toby", 1, "IfFighter")
+		TNT1 A 1 A_JumpIfInventory("CWeapMace_Toby", 1, "IfCleric")
+		TNT1 A 1 A_JumpIfInventory("MWeapWand_Toby", 1, "IfMage")
+		Fail
+	IfFighter:
+		TNT1 A 1 A_JumpIfArmorType("FalconShield", "NoPickup", 20)
+		TNT1 A 1 A_JumpIfArmorType("FalconShield", "NoPickup", 16)
+		TNT1 A 1 A_JumpIfArmorType("FalconShield", "NoPickup", 4)
+		TNT1 A 1 A_JumpIfInventory("FalconShield", 1, "NoPickup")
+		TNT1 A 1 A_GiveInventory("FalconShield", 4)
+		TNT1 A 1 A_PlaySound("armor/shield/ann")
+		Stop
+	IfCleric:
+		TNT1 A 1 A_JumpIfArmorType("FalconShield", "NoPickup", 18)
+		TNT1 A 1 A_JumpIfArmorType("FalconShield", "NoPickup", 14)
+		TNT1 A 1 A_JumpIfArmorType("FalconShield", "NoPickup", 5)
+		TNT1 A 1 A_JumpIfInventory("FalconShield", 1, "NoPickup")
+		TNT1 A 1 A_GiveInventory("FalconShield", 5)
+		TNT1 A 1 A_PlaySound("armor/shield/ann")
+		Stop
+	IfMage:
+		TNT1 A 1 A_JumpIfArmorType("FalconShield", "NoPickup", 16)
+		TNT1 A 1 A_JumpIfArmorType("FalconShield", "NoPickup", 12)
+		TNT1 A 1 A_JumpIfArmorType("FalconShield", "NoPickup", 3)
+		TNT1 A 1 A_JumpIfInventory("FalconShield", 1, "NoPickup")
+		TNT1 A 1 A_GiveInventory("FalconShield", 3)
+		TNT1 A 1 A_PlaySound("armor/shield/ann")
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}

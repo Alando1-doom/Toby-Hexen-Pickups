@@ -1,0 +1,41 @@
+ACTOR MysticUrn_Toby : CustomInventory Replaces ArtiSuperHealth
+{
+	Game Raven
+	SpawnID 25
+	+COUNTITEM
+	+FLOATBOB
+	Inventory.PickupSound "health/mysticurn"
+	Inventory.PickupMessage "$TXT_ARTISUPERHEALTH"
+	Inventory.PickupFlash "Urn_ID"
+	States
+	{
+	Spawn:
+		SPHL A 1 Bright A_SpawnItemEx("UrnPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		SPHL A 71 Bright
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIfInventory("ArtiSuperHealth_Toby", 25, "NoPickup")
+		TNT1 A 1 A_GiveInventory("ArtiSuperHealth_Toby", 1)
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}
+
+ACTOR ArtiSuperHealth_Toby : HealthPickup
+{
+	Game Raven
+	Health 100
+	Inventory.Icon ARTISPHL
+	Inventory.UseSound "urn/use"
+	Inventory.PickupMessage "$TXT_ARTISUPERHEALTH"
+	Tag "$TAG_ARTISUPERHEALTH"
+	HealthPickup.Autouse 2
+	States
+	{
+	Spawn:
+		SPHL A 350
+		Loop
+	}
+}

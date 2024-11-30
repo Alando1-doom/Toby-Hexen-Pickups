@@ -1,0 +1,407 @@
+Actor PuzzSkull_Toby : CustomInventory 9002
+{
+ Game Hexen
+ SpawnID 76
+ Inventory.PickupMessage "$TXT_ARTIPUZZSKULL"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   ASKU A 6 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   ASKU A 6
+	   ASKU A 6 Bright
+	   ASKU A 6
+	   ASKU A 6 Bright
+	   ASKU A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/skull")
+       TNT1 A 1 A_GiveInventory("PuzzSkull", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzGemBig_Toby : CustomInventory 9003
+{
+ Game Hexen
+ SpawnID 77
+ Inventory.PickupMessage "$TXT_ARTIPUZZGEMBIG"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   ABGM A 6 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   ABGM A 6
+	   ABGM A 6 Bright
+	   ABGM A 6
+	   ABGM A 6 Bright
+	   ABGM A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/biggem")
+       TNT1 A 1 A_GiveInventory("PuzzGemBig", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzGemRed_Toby : CustomInventory 9004
+{
+ Game Hexen
+ SpawnID 78
+ Inventory.PickupMessage "$TXT_ARTIPUZZGEMRED"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   AGMR A 6 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   AGMR A 6
+	   AGMR A 6 Bright
+	   AGMR A 6
+	   AGMR A 6 Bright
+	   AGMR A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/redgem")
+       TNT1 A 1 A_GiveInventory("PuzzGemRed", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzGemGreen1_Toby : CustomInventory 9005
+{
+ Game Hexen
+ SpawnID 79
+ Inventory.PickupMessage "$TXT_ARTIPUZZGEMGREEN1"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   AGMG A 6 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   AGMG A 6
+	   AGMG A 6 Bright
+	   AGMG A 6
+	   AGMG A 6 Bright
+	   AGMG A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/greengem1")
+       TNT1 A 1 A_GiveInventory("PuzzGemGreen1", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzGemGreen2_Toby : CustomInventory 9009
+{
+ Game Hexen
+ SpawnID 80
+ Inventory.PickupMessage "$TXT_ARTIPUZZGEMGREEN2"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   AGMG A 6 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   AGMG A 6
+	   AGMG A 6 Bright
+	   AGMG A 6
+	   AGMG A 6 Bright
+	   AGMG A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/greengem2")
+       TNT1 A 1 A_GiveInventory("PuzzGemGreen2", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzGemBlue1_Toby : CustomInventory 9006
+{
+ Game Hexen
+ SpawnID 81
+ Inventory.PickupMessage "$TXT_ARTIPUZZGEMBLUE1"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   AGMB A 6 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   AGMB A 6
+	   AGMB A 6 Bright
+	   AGMB A 6
+	   AGMB A 6 Bright
+	   AGMB A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/bluegem1")
+       TNT1 A 1 A_GiveInventory("PuzzGemBlue1", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzGemBlue2_Toby : CustomInventory 9010
+{
+ Game Hexen
+ SpawnID 82
+ Inventory.PickupMessage "$TXT_ARTIPUZZGEMBLUE2"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   AGMB A 6 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   AGMB A 6
+	   AGMB A 6 Bright
+	   AGMB A 6
+	   AGMB A 6 Bright
+	   AGMB A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/bluegem2")
+       TNT1 A 1 A_GiveInventory("PuzzGemBlue2", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzBook1_Toby : CustomInventory 9007
+{
+ Game Hexen
+ SpawnID 83
+ Inventory.PickupMessage "$TXT_ARTIPUZZBOOK1"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   ABK1 A 6 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   ABK1 A 6
+	   ABK1 A 6 Bright
+	   ABK1 A 6
+	   ABK1 A 6 Bright
+	   ABK1 A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/book1")
+       TNT1 A 1 A_GiveInventory("PuzzBook1", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzBook2_Toby : CustomInventory 9008
+{
+ Game Hexen
+ SpawnID 84
+ Inventory.PickupMessage "$TXT_ARTIPUZZBOOK2"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   ABK2 A 6 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   ABK2 A 6
+	   ABK2 A 6 Bright
+	   ABK2 A 6
+	   ABK2 A 6 Bright
+	   ABK2 A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/book2")
+       TNT1 A 1 A_GiveInventory("PuzzBook2", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzFlameMask_Toby : CustomInventory 9014
+{
+ Game Hexen
+ //SpawnID 85 - Has no Spawn ID
+ Inventory.PickupMessage "$TXT_ARTIPUZZSKULL2"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   ASK2 A 6 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   ASK2 A 6
+	   ASK2 A 6 Bright
+	   ASK2 A 6
+	   ASK2 A 6 Bright
+	   ASK2 A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/mask")
+       TNT1 A 1 A_GiveInventory("PuzzFlameMask", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzFWeapon_Toby : CustomInventory 9015
+{
+ Game Hexen
+ //SpawnID 86 - Has no Spawn ID
+ Inventory.PickupMessage "$TXT_ARTIPUZZFWEAPON"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   AFWP A 6 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   AFWP A 6
+	   AFWP A 6 Bright
+	   AFWP A 6
+	   AFWP A 6 Bright
+	   AFWP A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/sword")
+       TNT1 A 1 A_GiveInventory("PuzzFWeapon", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzCWeapon_Toby : CustomInventory 9016
+{
+ Game Hexen
+ //SpawnID 87 - Has no Spawn ID
+ Inventory.PickupMessage "$TXT_ARTIPUZZCWEAPON"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   ACWP A 6 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   ACWP A 6
+	   ACWP A 6 Bright
+	   ACWP A 6
+	   ACWP A 6 Bright
+	   ACWP A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/cross")
+       TNT1 A 1 A_GiveInventory("PuzzCWeapon", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzMWeapon_Toby : CustomInventory 9017
+{
+ Game Hexen
+ //SpawnID 88 - Has no Spawn ID
+ Inventory.PickupMessage "$TXT_ARTIPUZZMWEAPON"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   AMWP A 6 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   AMWP A 6
+	   AMWP A 6 Bright
+	   AMWP A 6
+	   AMWP A 6 Bright
+	   AMWP A 6
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/sigil")
+       TNT1 A 1 A_GiveInventory("PuzzMWeapon", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzGear1_Toby : CustomInventory 9018
+{
+ Game Hexen
+ //SpawnID 90 - Has no Spawn ID
+ Inventory.PickupMessage "$TXT_ARTIPUZZGEAR"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   AGER A 4 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   AGER BCDEFGH 4 Bright
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/gear1")
+       TNT1 A 1 A_GiveInventory("PuzzGear1", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzGear2_Toby : CustomInventory 9019
+{
+ Game Hexen
+ //SpawnID 91 - Has no Spawn ID
+ Inventory.PickupMessage "$TXT_ARTIPUZZGEAR"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   AGR2 A 4 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   AGR2 BCDEFGH 4 Bright
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/gear2")
+       TNT1 A 1 A_GiveInventory("PuzzGear2", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzGear3_Toby : CustomInventory 9020
+{
+ Game Hexen
+ //SpawnID 91 - Has no Spawn ID
+ Inventory.PickupMessage "$TXT_ARTIPUZZGEAR"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   AGR3 A 4 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   AGR3 BCDEFGH 4 Bright
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/gear3")
+       TNT1 A 1 A_GiveInventory("PuzzGear3", 1)
+	   Stop
+    }
+}
+
+
+Actor PuzzGear4_Toby : CustomInventory 9021
+{
+ Game Hexen
+ //SpawnID 92 - Has no Spawn ID
+ Inventory.PickupMessage "$TXT_ARTIPUZZGEAR"
+ inventory.pickupsound "puzzle/pickup"
+ -COUNTITEM
+ States
+ {
+  Spawn:
+	   AGR4 A 4 Bright A_SpawnItemEx("PuzzleItemPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+	   AGR4 BCDEFGH 4 Bright
+       Loop
+ Pickup:
+	   TNT1 A 0 A_PlaySound("ann/puzzle/gear4")
+       TNT1 A 1 A_GiveInventory("PuzzGear4", 1)
+	   Stop
+    }
+}

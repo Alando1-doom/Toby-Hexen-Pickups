@@ -1,0 +1,52 @@
+ACTOR AmuletOfWarding_Toby : CustomInventory replaces AmuletOfWarding
+{
+	Game Hexen
+	SpawnID 71
+	+FLOATBOB
+	Inventory.PickupMessage "$TXT_ARMOR4"
+	Inventory.PickupSound "armor/amulet"
+States
+	{
+	Spawn:
+		AMLT A 1 A_SpawnItemEx("AmuletPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		AMLT A 6 Bright
+		AMLT A 6
+		AMLT A 6 Bright
+		AMLT A 6
+		AMLT A 6 Bright
+		AMLT A 6
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIfInventory("FWeapFist_Toby", 1, "IfFighter")
+		TNT1 A 1 A_JumpIfInventory("CWeapMace_Toby", 1, "IfCleric")
+		TNT1 A 1 A_JumpIfInventory("MWeapWand_Toby", 1, "IfMage")
+		Fail
+	IfFighter:
+		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 20)
+		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 16)
+		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 1)
+		TNT1 A 1 A_JumpIfInventory("AmuletOfWarding", 1, "NoPickup")
+		TNT1 A 1 A_GiveInventory("AmuletOfWarding", 1)
+		TNT1 A 1 A_PlaySound("armor/amulet/ann")
+		Stop
+	IfCleric:
+		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 18)
+		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 14)
+		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 4)
+		TNT1 A 1 A_JumpIfInventory("AmuletOfWarding", 1, "NoPickup")
+		TNT1 A 1 A_GiveInventory("AmuletOfWarding", 4)
+		TNT1 A 1 A_PlaySound("armor/amulet/ann")
+		Stop
+	IfMage:
+		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 16)
+		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 12)
+		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 5)
+		TNT1 A 1 A_JumpIfInventory("AmuletOfWarding", 1, "NoPickup")
+		TNT1 A 1 A_GiveInventory("AmuletOfWarding", 5)
+		TNT1 A 1 A_PlaySound("armor/amulet/ann")
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}

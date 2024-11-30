@@ -1,0 +1,24 @@
+ACTOR CrystalVial_Toby : CustomInventory replaces CrystalVial
+{
+	Game Raven
+	SpawnID 23
+	+FLOATBOB
+	Inventory.PickupMessage "$TXT_ITEMHEALTH"
+	Inventory.PickupSound "health/crystalvial"
+	Inventory.PickupFlash "Vial_ID"
+States
+	{
+	Spawn:
+		PTN1 A 1 Bright A_SpawnItemEx("VialPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		PTN1 BCABCABCAB 3 Bright
+		PTN1 A 1 Bright
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIf(health>=100, "NoPickup")
+		TNT1 A 1 A_GiveInventory("CrystalVial", 1)
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}

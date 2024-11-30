@@ -1,0 +1,33 @@
+ACTOR ArtiTeleportOther_Toby : CustomInventory 10040
+{
+	Game Hexen
+	SpawnID 17
+	+COUNTITEM
+	+FLOATBOB
+	+INVENTORY.PICKUPFLASH
+	+INVENTORY.FANCYPICKUPSOUND
+	Inventory.PickupSound "artifact/banish"
+	Inventory.PickupMessage "$TXT_ARTITELEPORTOTHER"
+	Tag "$TAG_ARTITELEPORTOTHER"
+	States
+	{
+	Spawn:
+		TELO A 4 Bright A_SpawnItemEx("BanishPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		TELO BCDABCDABCD 4 Bright
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIfInventory("ArtiTeleportOther_2", 25, "NoPickup")
+		TNT1 A 0 A_GiveInventory("ArtiTeleportOther_2", 1)
+		TNT1 A 0 A_PlaySound("artifact/banish/ann")
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}
+
+
+ACTOR ArtiTeleportOther_2 : ArtiTeleportOther
+{
+	Inventory.UseSound "artifact/banish/use"
+}

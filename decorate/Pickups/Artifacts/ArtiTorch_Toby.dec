@@ -1,0 +1,46 @@
+ACTOR ArtiTorch_Toby : CustomInventory replaces ArtiTorch
+{
+	Game Raven
+	SpawnID 73
+	Inventory.RespawnTics 4230
+	+COUNTITEM
+	+FLOATBOB
+	+INVENTORY.PICKUPFLASH
+	Inventory.PickupMessage "$TXT_ARTITORCH"
+	Inventory.PickupSound "artifact/torch"
+	States
+	{
+	Spawn:
+		TRCH A 3 Bright A_SpawnItemEx("TorchPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		TRCH BCABCABCABCABCABCABCABC 3 Bright
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIfInventory("TorchGiver", 25, "NoPickup")
+		TNT1 A 0 A_GiveInventory("TorchGiver", 1)
+		TNT1 A 0 A_PlaySound("artifact/torch/ann")
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}
+
+ACTOR TorchGiver : PowerupGiver
+{
+	Game Raven
+	SpawnID 73
+	+COUNTITEM
+	+FLOATBOB
+	+INVENTORY.PICKUPFLASH
+	Inventory.Icon ARTITRCH
+	Inventory.UseSound "artifact/torch/use"
+	Inventory.PickupMessage "$TXT_ARTITORCH"
+	Tag "$TAG_ARTITORCH"
+	Powerup.Type Torch
+	States
+	{
+	Spawn:
+		TRCH ABC 3 Bright
+		Loop
+	}
+}

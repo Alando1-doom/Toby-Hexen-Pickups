@@ -1,0 +1,169 @@
+//Health
+health/crystalvial							potion
+ann/crystalvial								annvial
+$rolloff beacon/crystalvial	linear	56 300
+beacon/crystalvial						dshlthm
+
+health/quartzflask						qrtzpck
+quartz/use									qrtzuse
+ann/quartzflask							annqrtz
+$rolloff beacon/quartzflask	linear	56 300
+beacon/quartzflask						dshlthlg
+
+health/mysticurn							urnpick
+urn/use										urnuse
+ann/mysticurn								annurn
+$rolloff beacon/mysticurn	linear	56 300
+beacon/mysticurn						urnbcn
+
+artifact/healradius					healpck
+artifact/healradius/ann				annheal
+artifact/healradius/use				healuse
+$rolloff artifact/healradius/beacon		linear	56 300
+artifact/healradius/beacon		healbcn
+
+
+//Armor
+
+armor/helmet						plathelm
+armor/helmet/ann				annhelm
+
+artifact/bracers						bracer
+artifact/bracers/use					braceuse
+artifact/bracers/ann				annbrac
+
+armor/mesharmor				mesharm
+armor/mesharmor/ann			annmesh
+
+armor/shield						fshield
+armor/shield/ann					annshld
+
+armor/amulet						amulet
+armor/amulet/ann				annamlt
+
+$rolloff beacon/armor/amulet 	linear	56 300
+beacon/armor/amulet						amltbcn
+
+$rolloff beacon/armor/small 	linear	56 300
+beacon/armor/small							dsarmsm
+
+$rolloff beacon/armor/medium	linear	56 300
+beacon/armor/medium							dsarmbc
+
+$rolloff beacon/armor/large	linear	56 300
+beacon/armor/large							dsarmlg
+
+
+//Keys
+key/pickup									getkey2
+$rolloff key/beacon   linear  96 384
+key/beacon									keybeac
+ann/key/steel								annsteel
+ann/key/cave								anncave
+ann/key/axe									annaxek
+ann/key/fire									annfirek
+ann/key/emerald							annemrld
+ann/key/dungeon						anndung
+ann/key/silver								annsilvk
+ann/key/rusted									annrust
+ann/key/horn								annhorn
+ann/key/swamp							annswmp
+ann/key/castle								anncastl
+
+
+//Puzzle Items
+puzzle/pickup				puzlitem
+$rolloff puzzle/beacon		linear	56 300
+puzzle/beacon				puzbeac
+ann/puzzle/skull				puzskull
+ann/puzzle/biggem			puzbgem
+ann/puzzle/redgem			puzrgem
+ann/puzzle/bluegem1		puzbgem1
+ann/puzzle/bluegem2		puzbgem2
+ann/puzzle/greengem1	puzggem1
+ann/puzzle/greengem2	puzggem2
+ann/puzzle/book1			puzbook1
+ann/puzzle/book2			puzbook2
+ann/puzzle/mask				puzmask
+ann/puzzle/sword			puzswrd
+ann/puzzle/cross				puzrelic
+ann/puzzle/sigil				puzsigil
+ann/puzzle/gear1			puzgear1
+ann/puzzle/gear2			puzgear2
+ann/puzzle/gear3			puzgear3
+ann/puzzle/gear4			puzgear4
+
+
+//Artifacts / Powerups
+
+artifact/chaosdevice					chaospck
+artifact/chaosdevice/ann				annchaos
+artifact/chaosdevice/use				chaosuse
+$rolloff artifact/chaosdevice/beacon		linear	56 300
+artifact/chaosdevice/beacon		chaosbcn
+
+artifact/wings								wingpick
+artifact/wings/ann						annwings
+artifact/wings/use						winguse
+$rolloff artifact/wings/beacon		linear	56 300
+artifact/wings/beacon					wingbeac
+artifact/wings/wear						wingout
+
+artifact/defender									iconpick
+artifact/defender/ann							annicon
+artifact/defender/use							iconuse
+$rolloff artifact/defender/beacon		linear	56 300
+artifact/defender/beacon						iconbeac
+invul/wearoff										defnout
+
+artifact/pork									porkpck
+artifact/pork/ann							annpork
+artifact/pork/use							porkuse
+$rolloff artifact/pork/beacon		linear	56 300
+artifact/pork/beacon					porkbeac
+
+artifact/torch								trchpick
+artifact/torch/ann							anntrch
+artifact/torch/use							trchuse
+$rolloff artifact/torch/beacon		linear	56 300
+artifact/torch/beacon					trchbeac
+
+artifact/krater								kratpick
+artifact/krater/ann						annkrat
+artifact/krater/use						kratuse
+$rolloff artifact/krater/beacon		linear	56 300
+artifact/krater/beacon					kratbcn
+
+artifact/bomb							flchtpck
+artifact/bomb/ann					annflcht
+artifact/bomb/use					flchtuse
+$rolloff artifact/bomb/beacon		linear	56 300
+artifact/bomb/beacon					flchtbcn
+timebomb/tic								tictoc
+
+artifact/banish								banpck
+artifact/banish/ann						annban
+artifact/banish/use						banuse
+$rolloff artifact/banish/beacon		linear	56 300
+artifact/banish/beacon					banbcn
+
+artifact/blastradius							discpick
+artifact/blastradius/ann						anndisc
+artifact/blastradius/use						discuse
+$rolloff artifact/blastradius/beacon		linear	56 300
+artifact/blastradius/beacon					discbcn
+
+artifact/boots								bootpick
+artifact/boots/ann						annboot
+artifact/boots/use						bootuse
+artifact/boots/wear					bootoff
+$rolloff artifact/boots/beacon		linear	56 300
+artifact/boots/beacon					bootbcn
+
+artifact/servant								servpck
+artifact/servant/ann						annserv
+artifact/servant/use						servuse
+$rolloff artifact/servant/beacon		linear	56 300
+artifact/servant/beacon					servbcn
+
+stat/full											dsfull

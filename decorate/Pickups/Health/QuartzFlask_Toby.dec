@@ -1,0 +1,40 @@
+ACTOR QuartzFlask_Toby : CustomInventory Replaces ArtiHealth
+{
+	Game Raven
+	SpawnID 24
+	+FLOATBOB
+	Inventory.PickupSound "health/quartzflask"
+	Inventory.PickupMessage "$TXT_ARTIHEALTH"
+	Inventory.PickupFlash "Flask_ID"
+	States
+	{
+	Spawn:
+		PTN2 A 1 Bright A_SpawnItemEx("FlaskPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		PTN2 BCABCABCAB 3 Bright
+		PTN2 A 1 Bright
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIfInventory("ArtiHealth_Toby", 25, "NoPickup")
+		TNT1 A 1 A_GiveInventory("ArtiHealth_Toby", 1)
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}
+
+ACTOR ArtiHealth_Toby : HealthPickup
+{
+	Health 25
+	Inventory.Icon ARTIPTN2
+	Inventory.UseSound "quartz/use"
+	Inventory.PickupMessage "$TXT_ARTIHEALTH"
+	Tag "$TAG_ARTIHEALTH"
+	HealthPickup.Autouse 1
+	States
+	{
+	Spawn:
+		PTN2 ABC 4
+		Loop
+	}
+}

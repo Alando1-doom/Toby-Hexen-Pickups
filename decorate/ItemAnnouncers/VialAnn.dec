@@ -1,0 +1,14 @@
+Actor VialAnn : CustomInventory
+{
+ inventory.pickupmessage ""
+ -COUNTITEM
+ States
+ {
+  Spawn: 
+       TNT1 A 1
+       Loop
+ Pickup:
+		TNT1 A 1 A_PlaySoundEx("ann/crystalvial", "WeaponSlot7", 0, -1)
+        Stop
+    }
+}

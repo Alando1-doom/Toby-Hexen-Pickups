@@ -1,0 +1,31 @@
+ACTOR SpeedBoots_Toby : CustomInventory 8002
+{
+	Game Hexen
+	SpawnID 13
+	+FLOATBOB
+	+COUNTITEM
+	+INVENTORY.PICKUPFLASH
+	Inventory.PickupMessage "$TXT_ARTISPEED"
+	Inventory.PickupSound "artifact/boots"
+	States
+	{
+	Spawn:
+		SPED A 3 Bright A_SpawnItemEx("BootsPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		SPED BCDEFGHABCDEFGH 3 Bright
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIfInventory("ArtiSpeedBoots_Giver", 25, "NoPickup")
+		TNT1 A 0 A_GiveInventory("ArtiSpeedBoots_Giver", 1)
+		TNT1 A 0 A_PlaySound("artifact/boots/ann")
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}
+
+
+ACTOR ArtiSpeedBoots_Giver : ArtiSpeedBoots
+{
+	Inventory.UseSound "artifact/boots/use"
+}

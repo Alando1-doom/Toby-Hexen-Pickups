@@ -1,0 +1,52 @@
+ACTOR PlatinumHelm_Toby : CustomInventory replaces PlatinumHelm
+{
+	Game Hexen
+	SpawnID 70
+	+FLOATBOB
+	Inventory.PickupMessage "$TXT_ARMOR3"
+	Inventory.PickupSound "armor/helmet"
+States
+	{
+	Spawn:
+		HELM A 1 A_SpawnItemEx("LightArmorPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		HELM A 6 Bright
+		HELM A 6
+		HELM A 6 Bright
+		HELM A 6
+		HELM A 6 Bright
+		HELM A 6
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIfInventory("FWeapFist_Toby", 1, "IfFighter")
+		TNT1 A 1 A_JumpIfInventory("CWeapMace_Toby", 1, "IfCleric")
+		TNT1 A 1 A_JumpIfInventory("MWeapWand_Toby", 1, "IfMage")
+		Fail
+	IfFighter:
+		TNT1 A 1 A_JumpIfArmorType("PlatinumHelm", "NoPickup", 20)
+		TNT1 A 1 A_JumpIfArmorType("PlatinumHelm", "NoPickup", 16)
+		TNT1 A 1 A_JumpIfArmorType("PlatinumHelm", "NoPickup", 3)
+		TNT1 A 1 A_JumpIfInventory("PlatinumHelm", 1, "NoPickup")
+		TNT1 A 1 A_GiveInventory("PlatinumHelm", 3)
+		TNT1 A 1 A_PlaySound("armor/helmet/ann")
+		Stop
+	IfCleric:
+		TNT1 A 1 A_JumpIfArmorType("PlatinumHelm", "NoPickup", 18)
+		TNT1 A 1 A_JumpIfArmorType("PlatinumHelm", "NoPickup", 14)
+		TNT1 A 1 A_JumpIfArmorType("PlatinumHelm", "NoPickup", 1)
+		TNT1 A 1 A_JumpIfInventory("PlatinumHelm", 1, "NoPickup")
+		TNT1 A 1 A_GiveInventory("PlatinumHelm", 1)
+		TNT1 A 1 A_PlaySound("armor/helmet/ann")
+		Stop
+	IfMage:
+		TNT1 A 1 A_JumpIfArmorType("PlatinumHelm", "NoPickup", 16)
+		TNT1 A 1 A_JumpIfArmorType("PlatinumHelm", "NoPickup", 12)
+		TNT1 A 1 A_JumpIfArmorType("PlatinumHelm", "NoPickup", 2)
+		TNT1 A 1 A_JumpIfInventory("PlatinumHelm", 1, "NoPickup")
+		TNT1 A 1 A_GiveInventory("PlatinumHelm", 2)
+		TNT1 A 1 A_PlaySound("armor/helmet/ann")
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}

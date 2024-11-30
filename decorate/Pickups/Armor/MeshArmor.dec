@@ -1,0 +1,52 @@
+ACTOR MeshArmor_Toby : CustomInventory replaces MeshArmor
+{
+	Game Hexen
+	SpawnID 68
+	+FLOATBOB
+	Inventory.PickupMessage "$TXT_ARMOR1"
+	Inventory.PickupSound "armor/mesharmor"
+States
+	{
+	Spawn:
+		MESH A 1 A_SpawnItemEx("HeavyArmorPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		MESH A 6 Bright
+		MESH A 6
+		MESH A 6 Bright
+		MESH A 6
+		MESH A 6 Bright
+		MESH A 6
+		Loop
+	Pickup:
+		TNT1 A 1 A_JumpIfInventory("FWeapFist_Toby", 1, "IfFighter")
+		TNT1 A 1 A_JumpIfInventory("CWeapMace_Toby", 1, "IfCleric")
+		TNT1 A 1 A_JumpIfInventory("MWeapWand_Toby", 1, "IfMage")
+		Fail
+	IfFighter:
+		TNT1 A 1 A_JumpIfArmorType("MeshArmor", "NoPickup", 20)
+		TNT1 A 1 A_JumpIfArmorType("MeshArmor", "NoPickup", 16)
+		TNT1 A 1 A_JumpIfArmorType("MeshArmor", "NoPickup", 5)
+		TNT1 A 1 A_JumpIfInventory("MeshArmor", 1, "NoPickup")
+		TNT1 A 1 A_GiveInventory("MeshArmor", 5)
+		TNT1 A 1 A_PlaySound("armor/mesharmor/ann")
+		Stop
+	IfCleric:
+		TNT1 A 1 A_JumpIfArmorType("MeshArmor", "NoPickup", 18)
+		TNT1 A 1 A_JumpIfArmorType("MeshArmor", "NoPickup", 14)
+		TNT1 A 1 A_JumpIfArmorType("MeshArmor", "NoPickup", 2)
+		TNT1 A 1 A_JumpIfInventory("MeshArmor", 1, "NoPickup")
+		TNT1 A 1 A_GiveInventory("MeshArmor", 2)
+		TNT1 A 1 A_PlaySound("armor/mesharmor/ann")
+		Stop
+	IfMage:
+		TNT1 A 1 A_JumpIfArmorType("MeshArmor", "NoPickup", 16)
+		TNT1 A 1 A_JumpIfArmorType("MeshArmor", "NoPickup", 12)
+		TNT1 A 1 A_JumpIfArmorType("MeshArmor", "NoPickup", 1)
+		TNT1 A 1 A_JumpIfInventory("MeshArmor", 1, "NoPickup")
+		TNT1 A 1 A_GiveInventory("MeshArmor", 1)
+		TNT1 A 1 A_PlaySound("armor/mesharmor/ann")
+		Stop
+	NoPickup:
+		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
+		Fail
+	}
+}
