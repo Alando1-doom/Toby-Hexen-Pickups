@@ -5,7 +5,6 @@ ACTOR CrystalVial_Toby : CustomInventory replaces CrystalVial
 	+FLOATBOB
 	Inventory.PickupMessage "$TXT_ITEMHEALTH"
 	Inventory.PickupSound "health/crystalvial"
-	Inventory.PickupFlash "Vial_ID"
 States
 	{
 	Spawn:
@@ -16,6 +15,7 @@ States
 	Pickup:
 		TNT1 A 1 A_JumpIf(health>=100, "NoPickup")
 		TNT1 A 1 A_GiveInventory("CrystalVial", 1)
+		TNT1 A 1 A_PlaySoundEx("ann/crystalvial", "SoundSlot5", 0, -1)
 		Stop
 	NoPickup:
 		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)

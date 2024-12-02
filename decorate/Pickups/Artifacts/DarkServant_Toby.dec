@@ -20,7 +20,7 @@ ACTOR DarkServant_Toby : CustomInventory 86
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiDarkServant_2", 25, "NoPickup")
 		TNT1 A 0 A_GiveInventory("ArtiDarkServant_2", 1)
-		TNT1 A 0 A_PlaySound("artifact/servant/ann")
+		TNT1 A 1 A_PlaySoundEx("artifact/servant/ann", "Auto", 0, -1)
 		Stop
 	NoPickup:
 		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)

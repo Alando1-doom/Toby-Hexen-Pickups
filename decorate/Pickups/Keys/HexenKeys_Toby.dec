@@ -20,7 +20,7 @@ Actor SteelKey_Toby : CustomInventory 8030
 	   KEY1 A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/key/steel")
+	   TNT1 A 1 A_PlaySoundEx("ann/key/steel", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("KeySteel", 1)
 	   Stop
     }
@@ -45,7 +45,7 @@ Actor CaveKey_Toby : CustomInventory 8031
 	   KEY2 A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/key/cave")
+	   TNT1 A 1 A_PlaySoundEx("ann/key/cave", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("KeyCave", 1)
 	   Stop
     }
@@ -70,7 +70,7 @@ Actor AxeKey_Toby : CustomInventory 8032
 	   KEY3 A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/key/axe")
+	   TNT1 A 1 A_PlaySoundEx("ann/key/axe", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("KeyAxe", 1)
 	   Stop
     }
@@ -95,7 +95,7 @@ Actor FireKey_Toby : CustomInventory 8033
 	   KEY4 A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/key/fire")
+	   TNT1 A 1 A_PlaySoundEx("ann/key/fire", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("KeyFire", 1)
 	   Stop
     }
@@ -120,7 +120,7 @@ Actor EmeraldKey_Toby : CustomInventory 8034
 	   KEY5 A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/key/emerald")
+	   TNT1 A 1 A_PlaySoundEx("ann/key/emerald", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("KeyEmerald", 1)
 	   Stop
     }
@@ -145,7 +145,7 @@ Actor DungeonKey_Toby : CustomInventory 8035
 	   KEY6 A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/key/dungeon")
+	   TNT1 A 1 A_PlaySoundEx("ann/key/dungeon", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("KeyDungeon", 1)
 	   Stop
     }
@@ -170,7 +170,7 @@ Actor SilverKey_Toby : CustomInventory 8036
 	   KEY7 A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/key/silver")
+	   TNT1 A 1 A_PlaySoundEx("ann/key/silver", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("KeySilver", 1)
 	   Stop
     }
@@ -195,7 +195,7 @@ Actor RustedKey_Toby : CustomInventory 8037
 	   KEY8 A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/key/rusted")
+	   TNT1 A 1 A_PlaySoundEx("ann/key/rusted", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("KeyRusted", 1)
 	   Stop
     }
@@ -220,7 +220,7 @@ Actor HornKey_Toby : CustomInventory 8038
 	   KEY9 A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/key/horn")
+	   TNT1 A 1 A_PlaySoundEx("ann/key/horn", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("KeyHorn", 1)
 	   Stop
     }
@@ -245,7 +245,7 @@ Actor SwampKey_Toby : CustomInventory 8039
 	   KEYA A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/key/swamp")
+	   TNT1 A 1 A_PlaySoundEx("ann/key/swamp", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("KeySwamp", 1)
 	   Stop
     }

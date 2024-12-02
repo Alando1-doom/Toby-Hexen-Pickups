@@ -16,7 +16,7 @@ Actor PuzzSkull_Toby : CustomInventory 9002
 	   ASKU A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/skull")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/skull", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzSkull", 1)
 	   Stop
     }
@@ -41,7 +41,7 @@ Actor PuzzGemBig_Toby : CustomInventory 9003
 	   ABGM A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/biggem")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/biggem", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzGemBig", 1)
 	   Stop
     }
@@ -66,7 +66,7 @@ Actor PuzzGemRed_Toby : CustomInventory 9004
 	   AGMR A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/redgem")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/redgem", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzGemRed", 1)
 	   Stop
     }
@@ -91,7 +91,7 @@ Actor PuzzGemGreen1_Toby : CustomInventory 9005
 	   AGMG A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/greengem1")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/greengem1", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzGemGreen1", 1)
 	   Stop
     }
@@ -116,7 +116,7 @@ Actor PuzzGemGreen2_Toby : CustomInventory 9009
 	   AGMG A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/greengem2")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/greengem2", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzGemGreen2", 1)
 	   Stop
     }
@@ -141,7 +141,7 @@ Actor PuzzGemBlue1_Toby : CustomInventory 9006
 	   AGMB A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/bluegem1")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/bluegem1", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzGemBlue1", 1)
 	   Stop
     }
@@ -166,7 +166,7 @@ Actor PuzzGemBlue2_Toby : CustomInventory 9010
 	   AGMB A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/bluegem2")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/bluegem2", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzGemBlue2", 1)
 	   Stop
     }
@@ -191,7 +191,7 @@ Actor PuzzBook1_Toby : CustomInventory 9007
 	   ABK1 A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/book1")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/book1", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzBook1", 1)
 	   Stop
     }
@@ -216,7 +216,7 @@ Actor PuzzBook2_Toby : CustomInventory 9008
 	   ABK2 A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/book2")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/book2", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzBook2", 1)
 	   Stop
     }
@@ -241,7 +241,7 @@ Actor PuzzFlameMask_Toby : CustomInventory 9014
 	   ASK2 A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/mask")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/mask", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzFlameMask", 1)
 	   Stop
     }
@@ -266,7 +266,7 @@ Actor PuzzFWeapon_Toby : CustomInventory 9015
 	   AFWP A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/sword")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/sword", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzFWeapon", 1)
 	   Stop
     }
@@ -291,7 +291,7 @@ Actor PuzzCWeapon_Toby : CustomInventory 9016
 	   ACWP A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/cross")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/cross", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzCWeapon", 1)
 	   Stop
     }
@@ -316,7 +316,7 @@ Actor PuzzMWeapon_Toby : CustomInventory 9017
 	   AMWP A 6
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/sigil")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/sigil", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzMWeapon", 1)
 	   Stop
     }
@@ -337,7 +337,7 @@ Actor PuzzGear1_Toby : CustomInventory 9018
 	   AGER BCDEFGH 4 Bright
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/gear1")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/gear1", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzGear1", 1)
 	   Stop
     }
@@ -358,7 +358,7 @@ Actor PuzzGear2_Toby : CustomInventory 9019
 	   AGR2 BCDEFGH 4 Bright
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/gear2")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/gear2", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzGear2", 1)
 	   Stop
     }
@@ -379,7 +379,7 @@ Actor PuzzGear3_Toby : CustomInventory 9020
 	   AGR3 BCDEFGH 4 Bright
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/gear3")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/gear3", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzGear3", 1)
 	   Stop
     }
@@ -400,7 +400,7 @@ Actor PuzzGear4_Toby : CustomInventory 9021
 	   AGR4 BCDEFGH 4 Bright
        Loop
  Pickup:
-	   TNT1 A 0 A_PlaySound("ann/puzzle/gear4")
+	   TNT1 A 1 A_PlaySoundEx("ann/puzzle/gear4", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("PuzzGear4", 1)
 	   Stop
     }

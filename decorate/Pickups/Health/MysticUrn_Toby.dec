@@ -6,7 +6,6 @@ ACTOR MysticUrn_Toby : CustomInventory Replaces ArtiSuperHealth
 	+FLOATBOB
 	Inventory.PickupSound "health/mysticurn"
 	Inventory.PickupMessage "$TXT_ARTISUPERHEALTH"
-	Inventory.PickupFlash "Urn_ID"
 	States
 	{
 	Spawn:
@@ -14,8 +13,9 @@ ACTOR MysticUrn_Toby : CustomInventory Replaces ArtiSuperHealth
 		SPHL A 71 Bright
 		Loop
 	Pickup:
-		TNT1 A 1 A_JumpIfInventory("ArtiSuperHealth_Toby", 25, "NoPickup")
+		TNT1 A 1 A_JumpIfInventory("ArtiSuperHealth_Toby", 16, "NoPickup")
 		TNT1 A 1 A_GiveInventory("ArtiSuperHealth_Toby", 1)
+		TNT1 A 1 A_PlaySoundEx("ann/mysticurn", "SoundSlot5", 0, -1)
 		Stop
 	NoPickup:
 		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)

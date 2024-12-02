@@ -17,7 +17,7 @@ ACTOR ArtiInvulnerability2_Toby : CustomInventory replaces ArtiInvulnerability2
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiInvulnerability2_Giver", 25, "NoPickup")
 		TNT1 A 0 A_GiveInventory("ArtiInvulnerability2_Giver", 1)
-		TNT1 A 0 A_PlaySound("artifact/defender/ann")
+		TNT1 A 1 A_PlaySoundEx("artifact/defender/ann", "Auto", 0, -1)
 		Stop
 	NoPickup:
 		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)

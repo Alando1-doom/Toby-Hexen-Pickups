@@ -18,7 +18,7 @@ ACTOR ArtiTeleportOther_Toby : CustomInventory 10040
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiTeleportOther_2", 25, "NoPickup")
 		TNT1 A 0 A_GiveInventory("ArtiTeleportOther_2", 1)
-		TNT1 A 0 A_PlaySound("artifact/banish/ann")
+		TNT1 A 1 A_PlaySoundEx("artifact/banish/ann", "Auto", 0, -1)
 		Stop
 	NoPickup:
 		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)

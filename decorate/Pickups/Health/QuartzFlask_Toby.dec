@@ -5,7 +5,6 @@ ACTOR QuartzFlask_Toby : CustomInventory Replaces ArtiHealth
 	+FLOATBOB
 	Inventory.PickupSound "health/quartzflask"
 	Inventory.PickupMessage "$TXT_ARTIHEALTH"
-	Inventory.PickupFlash "Flask_ID"
 	States
 	{
 	Spawn:
@@ -14,8 +13,9 @@ ACTOR QuartzFlask_Toby : CustomInventory Replaces ArtiHealth
 		PTN2 A 1 Bright
 		Loop
 	Pickup:
-		TNT1 A 1 A_JumpIfInventory("ArtiHealth_Toby", 25, "NoPickup")
+		TNT1 A 1 A_JumpIfInventory("ArtiHealth_Toby", 16, "NoPickup")
 		TNT1 A 1 A_GiveInventory("ArtiHealth_Toby", 1)
+		TNT1 A 1 A_PlaySoundEx("ann/quartzflask", "SoundSlot5", 0, -1)
 		Stop
 	NoPickup:
 		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
