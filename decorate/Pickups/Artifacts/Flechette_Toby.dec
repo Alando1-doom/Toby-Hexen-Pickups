@@ -18,7 +18,7 @@ ACTOR Flechette_Toby : CustomInventory 8000
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiPoisonBag", 25, "NoPickup")
 		TNT1 A 0 A_GiveInventory("ArtiPoisonBag", 1)
-		TNT1 A 0 A_PlaySound("artifact/bomb/ann")
+		TNT1 A 1 A_PlaySoundEx("artifact/bomb/ann", "Auto", 0, -1)
 		Stop
 	NoPickup:
 		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)

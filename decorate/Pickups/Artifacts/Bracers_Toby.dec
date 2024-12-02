@@ -19,7 +19,7 @@ ACTOR ArtiBoostArmor_Toby : CustomInventory 8041
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiBoostArmor_2", 25, "NoPickup")
 		TNT1 A 0 A_GiveInventory("ArtiBoostArmor_2", 1)
-		TNT1 A 0 A_PlaySound("artifact/bracers/ann")
+		TNT1 A 1 A_PlaySoundEx("artifact/bracers/ann", "Auto", 0, -1)
 		Stop
 	NoPickup:
 		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)

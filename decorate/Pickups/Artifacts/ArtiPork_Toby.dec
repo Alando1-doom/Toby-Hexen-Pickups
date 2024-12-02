@@ -21,7 +21,7 @@ ACTOR ArtiPork_Toby : CustomInventory replaces ArtiPork
 		Loop
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiPork_Toby", 25, "NoPickup")
-		TNT1 A 1 A_PlaySound("artifact/pork/ann")
+		TNT1 A 1 A_PlaySoundEx("artifact/pork/ann", "Auto", 0, -1)
 		Stop
 	NoPickup:
 		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)

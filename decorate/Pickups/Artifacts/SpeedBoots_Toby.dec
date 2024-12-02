@@ -16,7 +16,7 @@ ACTOR SpeedBoots_Toby : CustomInventory 8002
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiSpeedBoots_Giver", 25, "NoPickup")
 		TNT1 A 0 A_GiveInventory("ArtiSpeedBoots_Giver", 1)
-		TNT1 A 0 A_PlaySound("artifact/boots/ann")
+		TNT1 A 1 A_PlaySoundEx("artifact/boots/ann", "Auto", 0, -1)
 		Stop
 	NoPickup:
 		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)

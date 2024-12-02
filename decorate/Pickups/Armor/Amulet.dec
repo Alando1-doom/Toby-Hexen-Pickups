@@ -27,7 +27,7 @@ States
 		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 1)
 		TNT1 A 1 A_JumpIfInventory("AmuletOfWarding", 1, "NoPickup")
 		TNT1 A 1 A_GiveInventory("AmuletOfWarding", 1)
-		TNT1 A 1 A_PlaySound("armor/amulet/ann")
+		TNT1 A 1 A_PlaySoundEx("armor/amulet/ann", "SoundSlot5", 0, -1)
 		Stop
 	IfCleric:
 		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 18)
@@ -35,7 +35,7 @@ States
 		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 4)
 		TNT1 A 1 A_JumpIfInventory("AmuletOfWarding", 1, "NoPickup")
 		TNT1 A 1 A_GiveInventory("AmuletOfWarding", 4)
-		TNT1 A 1 A_PlaySound("armor/amulet/ann")
+		TNT1 A 1 A_PlaySoundEx("armor/amulet/ann", "SoundSlot5", 0, -1)
 		Stop
 	IfMage:
 		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 16)
@@ -43,7 +43,7 @@ States
 		TNT1 A 1 A_JumpIfArmorType("AmuletOfWarding", "NoPickup", 5)
 		TNT1 A 1 A_JumpIfInventory("AmuletOfWarding", 1, "NoPickup")
 		TNT1 A 1 A_GiveInventory("AmuletOfWarding", 5)
-		TNT1 A 1 A_PlaySound("armor/amulet/ann")
+		TNT1 A 1 A_PlaySoundEx("armor/amulet/ann", "SoundSlot5", 0, -1)
 		Stop
 	NoPickup:
 		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)

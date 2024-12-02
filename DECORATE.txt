@@ -1,13 +1,3 @@
-//Item Announcers Directory
-#include decorate/ItemAnnouncers/VialAnn.dec
-#include decorate/ItemAnnouncers/FlaskAnn.dec
-#include decorate/ItemAnnouncers/UrnAnn.dec
-
-//Item Flashes Directory
-#include decorate/ItemFlashes/Vial_ID.dec
-#include decorate/ItemFlashes/Flask_ID.dec
-#include decorate/ItemFlashes/Urn_ID.dec
-
 //Pickup Checkers Directory
 //Artifact Checkers
 #include decorate/PickupCheckers/ArtifactCheckers/WingsChecker.dec

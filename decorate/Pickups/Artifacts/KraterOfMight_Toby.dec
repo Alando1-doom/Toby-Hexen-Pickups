@@ -20,7 +20,7 @@ ACTOR ArtiBoostMana_Toby : CustomInventory replaces ArtiBoostMana
 		Loop
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiBoostMana_Toby", 25, "NoPickup")
-		TNT1 A 1 A_PlaySound("artifact/krater/ann")
+		TNT1 A 1 A_PlaySoundEx("artifact/krater/ann", "Auto", 0, -1)
 		Stop
 	NoPickup:
 		TNT1 A 1 A_PlaySoundEx("stat/full", "SoundSlot6", 0, 0)
