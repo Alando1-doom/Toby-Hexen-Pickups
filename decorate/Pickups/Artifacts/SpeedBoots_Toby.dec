@@ -10,8 +10,8 @@ ACTOR SpeedBoots_Toby : CustomInventory 8002
 	States
 	{
 	Spawn:
-		SPED A 3 Bright A_SpawnItemEx("BootsPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-		SPED BCDEFGHABCDEFGH 3 Bright
+		SPED A 4 Bright A_SpawnItemEx("BootsPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		SPED BCDEFGH 4 Bright
 		Loop
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiSpeedBoots_Giver", 25, "NoPickup")

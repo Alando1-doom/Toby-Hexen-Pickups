@@ -12,7 +12,7 @@ ACTOR ArtiTorch_Toby : CustomInventory replaces ArtiTorch
 	{
 	Spawn:
 		TRCH A 3 Bright A_SpawnItemEx("TorchPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-		TRCH BCABCABCABCABCABCABCABC 3 Bright
+		TRCH BCABCABCABC 3 Bright
 		Loop
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("TorchGiver", 25, "NoPickup")

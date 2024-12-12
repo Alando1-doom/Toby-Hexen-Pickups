@@ -141,7 +141,7 @@ $rolloff artifact/bomb/beacon		linear	56 300
 artifact/bomb/beacon					flchtbcn
 timebomb/tic								tictoc
 
-artifact/banish								banpck
+artifact/banish								banpick
 artifact/banish/ann						annban
 artifact/banish/use						banuse
 $rolloff artifact/banish/beacon		linear	56 300

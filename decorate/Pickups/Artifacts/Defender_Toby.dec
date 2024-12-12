@@ -11,8 +11,8 @@ ACTOR ArtiInvulnerability2_Toby : CustomInventory replaces ArtiInvulnerability2
 	States
 	{
 	Spawn:
-		DEFN A 3 Bright A_SpawnItemEx("DefenderPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-		DEFN BCDABCDABCDABCDABCD 3 Bright
+		DEFN A 2 Bright A_SpawnItemEx("DefenderPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		DEFN BCDABCDABCDABCDABCD 2 Bright
 		Loop
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiInvulnerability2_Giver", 25, "NoPickup")

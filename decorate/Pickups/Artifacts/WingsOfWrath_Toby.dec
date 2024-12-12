@@ -11,8 +11,8 @@ ACTOR ArtiFly_Toby : CustomInventory replaces ArtiFly
 	States
 	{
 	Spawn:
-		SOAR A 3 Bright A_SpawnItemEx("WingsPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-		SOAR BCBABCBABCBABCBABCBABCB 3 Bright
+		SOAR A 2 Bright A_SpawnItemEx("WingsPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		SOAR BCBABCBABCBABCBABC 2 Bright
 		Loop
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("WingsGiver", 25, "NoPickup")
