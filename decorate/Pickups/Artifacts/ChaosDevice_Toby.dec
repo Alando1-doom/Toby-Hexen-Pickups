@@ -10,8 +10,8 @@ ACTOR ArtiTeleport_Toby : CustomInventory 36
 	States
 	{
 	Spawn:
-		ATLP A 4 Bright A_SpawnItemEx("ChaosPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-		ATLP BCBABCBABCBABCB 4 Bright
+		ATLP A 2 Bright A_SpawnItemEx("ChaosPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		ATLP BCBABCBABCBABCBABCB 2 Bright
 		Loop
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiTeleport_2", 25, "NoPickup")

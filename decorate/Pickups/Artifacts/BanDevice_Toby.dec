@@ -12,8 +12,8 @@ ACTOR ArtiTeleportOther_Toby : CustomInventory 10040
 	States
 	{
 	Spawn:
-		TELO A 4 Bright A_SpawnItemEx("BanishPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-		TELO BCDABCDABCD 4 Bright
+		TELO A 2 Bright A_SpawnItemEx("BanishPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		TELO BCDABCDABCDABCDABCD 2 Bright
 		Loop
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiTeleportOther_2", 25, "NoPickup")

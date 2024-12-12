@@ -11,8 +11,8 @@ ACTOR ArtiBlastRadius_Toby : CustomInventory 10110
 	States
 	{
 	Spawn:
-		BLST A 3 Bright A_SpawnItemEx("BlastPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-		BLST BCDEFGHABCDEFGH 3 Bright
+		BLST A 5 Bright A_SpawnItemEx("BlastPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+		BLST BCDEFGH 5 Bright
 		Loop
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiBlastRadius_2", 25, "NoPickup")
