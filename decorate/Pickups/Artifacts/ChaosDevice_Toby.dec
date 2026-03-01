@@ -7,6 +7,7 @@ ACTOR ArtiTeleport_Toby : CustomInventory 36
 	+INVENTORY.PICKUPFLASH
 	Inventory.PickupMessage "$TXT_ARTITELEPORT"
 	Inventory.PickupSound "artifact/chaosdevice"
+	Tag "Chaos Device"
 	States
 	{
 	Spawn:

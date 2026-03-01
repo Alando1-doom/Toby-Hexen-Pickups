@@ -5,6 +5,7 @@ ACTOR AmuletOfWarding_Toby : CustomInventory replaces AmuletOfWarding
 	+FLOATBOB
 	Inventory.PickupMessage "$TXT_ARMOR4"
 	Inventory.PickupSound "armor/amulet"
+	Tag "Amulet of Warding"
 States
 	{
 	Spawn:

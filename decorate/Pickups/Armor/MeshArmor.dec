@@ -5,6 +5,7 @@ ACTOR MeshArmor_Toby : CustomInventory replaces MeshArmor
 	+FLOATBOB
 	Inventory.PickupMessage "$TXT_ARMOR1"
 	Inventory.PickupSound "armor/mesharmor"
+	Tag "Mesh Armor"
 States
 	{
 	Spawn:

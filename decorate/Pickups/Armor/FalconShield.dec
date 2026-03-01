@@ -5,6 +5,7 @@ ACTOR FalconShield_Toby : CustomInventory replaces FalconShield
 	+FLOATBOB
 	Inventory.PickupMessage "$TXT_ARMOR2"
 	Inventory.PickupSound "armor/shield"
+	Tag "Falcon Shield"
 States
 	{
 	Spawn:

@@ -5,6 +5,7 @@ ACTOR QuartzFlask_Toby : CustomInventory Replaces ArtiHealth
 	+FLOATBOB
 	Inventory.PickupSound "health/quartzflask"
 	Inventory.PickupMessage "$TXT_ARTIHEALTH"
+	Tag "$TAG_ARTIHEALTH"
 	States
 	{
 	Spawn:

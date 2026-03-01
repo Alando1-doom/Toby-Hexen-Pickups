@@ -5,6 +5,7 @@ ACTOR PlatinumHelm_Toby : CustomInventory replaces PlatinumHelm
 	+FLOATBOB
 	Inventory.PickupMessage "$TXT_ARMOR3"
 	Inventory.PickupSound "armor/helmet"
+	Tag "Platinum Helm"
 States
 	{
 	Spawn:

@@ -13,7 +13,7 @@ ACTOR Flechette_Toby : CustomInventory 8000
 	{
 	Spawn:
 		PSBG A 1 Bright A_SpawnItemEx("FlechettePickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-		PSBG A 71 Bright
+		PSBG A 40 Bright
 		Loop
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("ArtiPoisonBag", 25, "NoPickup")

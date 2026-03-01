@@ -5,6 +5,7 @@ Actor PuzzSkull_Toby : CustomInventory 9002
  Inventory.PickupMessage "$TXT_ARTIPUZZSKULL"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Yoric's Skull"
  States
  {
   Spawn:
@@ -30,6 +31,7 @@ Actor PuzzGemBig_Toby : CustomInventory 9003
  Inventory.PickupMessage "$TXT_ARTIPUZZGEMBIG"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Heart of Dsparil"
  States
  {
   Spawn:
@@ -55,6 +57,7 @@ Actor PuzzGemRed_Toby : CustomInventory 9004
  Inventory.PickupMessage "$TXT_ARTIPUZZGEMRED"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Ruby Gem"
  States
  {
   Spawn:
@@ -80,6 +83,7 @@ Actor PuzzGemGreen1_Toby : CustomInventory 9005
  Inventory.PickupMessage "$TXT_ARTIPUZZGEMGREEN1"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Emerald Gem"
  States
  {
   Spawn:
@@ -105,6 +109,7 @@ Actor PuzzGemGreen2_Toby : CustomInventory 9009
  Inventory.PickupMessage "$TXT_ARTIPUZZGEMGREEN2"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Emerald Gem"
  States
  {
   Spawn:
@@ -130,6 +135,7 @@ Actor PuzzGemBlue1_Toby : CustomInventory 9006
  Inventory.PickupMessage "$TXT_ARTIPUZZGEMBLUE1"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Sapphire Gem"
  States
  {
   Spawn:
@@ -155,6 +161,7 @@ Actor PuzzGemBlue2_Toby : CustomInventory 9010
  Inventory.PickupMessage "$TXT_ARTIPUZZGEMBLUE2"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Sapphire Gem"
  States
  {
   Spawn:
@@ -180,6 +187,7 @@ Actor PuzzBook1_Toby : CustomInventory 9007
  Inventory.PickupMessage "$TXT_ARTIPUZZBOOK1"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Daemon Codex"
  States
  {
   Spawn:
@@ -205,6 +213,7 @@ Actor PuzzBook2_Toby : CustomInventory 9008
  Inventory.PickupMessage "$TXT_ARTIPUZZBOOK2"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Libre Oscura"
  States
  {
   Spawn:
@@ -230,6 +239,7 @@ Actor PuzzFlameMask_Toby : CustomInventory 9014
  Inventory.PickupMessage "$TXT_ARTIPUZZSKULL2"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Flame Mask"
  States
  {
   Spawn:
@@ -255,6 +265,7 @@ Actor PuzzFWeapon_Toby : CustomInventory 9015
  Inventory.PickupMessage "$TXT_ARTIPUZZFWEAPON"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Glaive Seal"
  States
  {
   Spawn:
@@ -280,6 +291,7 @@ Actor PuzzCWeapon_Toby : CustomInventory 9016
  Inventory.PickupMessage "$TXT_ARTIPUZZCWEAPON"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Holy Relic"
  States
  {
   Spawn:
@@ -305,6 +317,7 @@ Actor PuzzMWeapon_Toby : CustomInventory 9017
  Inventory.PickupMessage "$TXT_ARTIPUZZMWEAPON"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Sigil of the Magus"
  States
  {
   Spawn:
@@ -330,6 +343,7 @@ Actor PuzzGear1_Toby : CustomInventory 9018
  Inventory.PickupMessage "$TXT_ARTIPUZZGEAR"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Clock Gear"
  States
  {
   Spawn:
@@ -351,6 +365,7 @@ Actor PuzzGear2_Toby : CustomInventory 9019
  Inventory.PickupMessage "$TXT_ARTIPUZZGEAR"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Clock Gear"
  States
  {
   Spawn:
@@ -372,6 +387,7 @@ Actor PuzzGear3_Toby : CustomInventory 9020
  Inventory.PickupMessage "$TXT_ARTIPUZZGEAR"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Clock Gear"
  States
  {
   Spawn:
@@ -393,6 +409,7 @@ Actor PuzzGear4_Toby : CustomInventory 9021
  Inventory.PickupMessage "$TXT_ARTIPUZZGEAR"
  inventory.pickupsound "puzzle/pickup"
  -COUNTITEM
+ Tag "Clock Gear"
  States
  {
   Spawn:
