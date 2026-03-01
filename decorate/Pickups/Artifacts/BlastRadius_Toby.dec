@@ -8,6 +8,7 @@ ACTOR ArtiBlastRadius_Toby : CustomInventory 10110
 	+FANCYPICKUPSOUND
 	Inventory.PickupSound "artifact/blastradius"
 	Inventory.PickupMessage "$TXT_ARTIBLASTRADIUS"
+	Tag "Disc of Repulsion"
 	States
 	{
 	Spawn:

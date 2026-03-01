@@ -5,6 +5,7 @@ ACTOR CrystalVial_Toby : CustomInventory replaces CrystalVial
 	+FLOATBOB
 	Inventory.PickupMessage "$TXT_ITEMHEALTH"
 	Inventory.PickupSound "health/crystalvial"
+	Tag "Crystal Vial"
 States
 	{
 	Spawn:

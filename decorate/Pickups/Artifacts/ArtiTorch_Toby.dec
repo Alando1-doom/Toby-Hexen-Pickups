@@ -8,6 +8,7 @@ ACTOR ArtiTorch_Toby : CustomInventory replaces ArtiTorch
 	+INVENTORY.PICKUPFLASH
 	Inventory.PickupMessage "$TXT_ARTITORCH"
 	Inventory.PickupSound "artifact/torch"
+	Tag "Torch"
 	States
 	{
 	Spawn:

@@ -8,11 +8,12 @@ ACTOR ArtiFly_Toby : CustomInventory replaces ArtiFly
 	+INVENTORY.PICKUPFLASH
 	Inventory.PickupMessage "$TXT_ARTIFLY"
 	Inventory.PickupSound "artifact/wings"
+	Tag "Wings of Wrath"
 	States
 	{
 	Spawn:
 		SOAR A 2 Bright A_SpawnItemEx("WingsPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-		SOAR BCBABCBABCBABCBABC 2 Bright
+		SOAR BCBABCBABCBABCBABCB 2 Bright
 		Loop
 	Pickup:
 		TNT1 A 1 A_JumpIfInventory("WingsGiver", 25, "NoPickup")

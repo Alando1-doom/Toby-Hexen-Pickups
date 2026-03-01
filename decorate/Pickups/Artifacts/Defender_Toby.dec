@@ -8,6 +8,7 @@ ACTOR ArtiInvulnerability2_Toby : CustomInventory replaces ArtiInvulnerability2
 	Inventory.RespawnTics 4230
 	Inventory.PickupMessage "$TXT_ARTIINVULNERABILITY2"
 	Inventory.PickupSound "artifact/defender"
+	Tag "Icon of the Defender"
 	States
 	{
 	Spawn:

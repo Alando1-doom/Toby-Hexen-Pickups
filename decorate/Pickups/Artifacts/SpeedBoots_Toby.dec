@@ -7,6 +7,7 @@ ACTOR SpeedBoots_Toby : CustomInventory 8002
 	+INVENTORY.PICKUPFLASH
 	Inventory.PickupMessage "$TXT_ARTISPEED"
 	Inventory.PickupSound "artifact/boots"
+	Tag "Boots of Speed"
 	States
 	{
 	Spawn:

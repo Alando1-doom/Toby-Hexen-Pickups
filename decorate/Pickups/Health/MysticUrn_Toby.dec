@@ -6,6 +6,7 @@ ACTOR MysticUrn_Toby : CustomInventory Replaces ArtiSuperHealth
 	+FLOATBOB
 	Inventory.PickupSound "health/mysticurn"
 	Inventory.PickupMessage "$TXT_ARTISUPERHEALTH"
+	Tag "Mystic Urn"
 	States
 	{
 	Spawn:
@@ -30,7 +31,7 @@ ACTOR ArtiSuperHealth_Toby : HealthPickup
 	Inventory.Icon ARTISPHL
 	Inventory.UseSound "urn/use"
 	Inventory.PickupMessage "$TXT_ARTISUPERHEALTH"
-	Tag "$TAG_ARTISUPERHEALTH"
+	Tag "Mystic Urn"
 	HealthPickup.Autouse 2
 	States
 	{
