@@ -41,9 +41,11 @@ beacon/armor/small							dsarmsm
 
 $rolloff beacon/armor/medium	linear	56 300
 beacon/armor/medium							dsarmbc
+$volume beacon/armor/medium    0.75
 
 $rolloff beacon/armor/large	linear	56 300
 beacon/armor/large							dsarmlg
+$volume beacon/armor/large    0.75
 
 
 //Keys
